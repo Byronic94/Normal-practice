@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>创建挑战</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/initial.css">
+</head>
+<body>
+	<div id="top">
+		<div id="face"><img src="../image/1.png" /></div>
+		<div id="introduce">
+		    <p id="nickname">hehe</p>
+		    <p id="autograph">朴实刚健，情绪多变</p>
+		</div>
+	</div>
+	<div id="challenge">
+		<button id="challengeType1">推荐挑战</button>
+		<button id="challengeType2">自定义挑战</button>
+		<button id="challengeType3">多人挑战</button>
+	</div>
+	<div id="Type1">
+		<center>
+		<ul>
+			<li>经典挑战1 <br /><img class="challengePic" src="../image/1.png" /></li>
+			<li>经典挑战2 <br /><img class="challengePic" src="../image/1.png" /></li>
+			<li>经典挑战3 <br /><img class="challengePic" src="../image/1.png" /></li>
+			<li>经典挑战4 <br /><img class="challengePic" src="../image/1.png" /></li>
+		</ul>
+		<form class="content" action="/example/html5/demo_form.asp" method="get" autocomplete="on">
+			<input type="text" name="name" class="formItem" placeholder="挑战人" /><br />
+		    <input type="text" name="challengeName" class="formItem" placeholder="挑战名称" /><br />
+			<input type="text" name="challengeTime" class="formItem" placeholder="挑战时限" /><br />
+			<textarea name="challengeaContent" class="formItem" placeholder="挑战内容" id="challengeaContent"> </textarea><br />
+			<input id="release" type="submit" value="发布挑战" />
+		</form>
+	</center>
+	</div>
+	<div class="content" id="Type2">
+		<center>
+		<form action="/example/html5/demo_form.asp" method="get" autocomplete="on">
+			<input type="text" name="name" class="formItem" placeholder="挑战人" /><br />
+		    <input type="text" name="challengeName" class="formItem" placeholder="挑战名称" /><br />
+			<input type="text" name="challengeTime" class="formItem" placeholder="挑战时限" /><br />
+	        <textarea name="challengeaContent" class="formItem" placeholder="挑战内容" id="challengeaContent"> </textarea><br />
+			<input id="release" type="submit" value="发布挑战" />
+		</form>
+	</center>
+	</div>
+	<div class="content" id="Type3">
+		<center>
+		<form ction="/example/html5/demo_form.asp" method="get" autocomplete="on">
+			<input type="text" name="name" class="formItem" placeholder="挑战人" /><br />
+		    <input type="text" name="challengeName" class="formItem" placeholder="挑战名称" /><br />
+			<input type="text" name="challengeTime" class="formItem" placeholder="挑战时限" /><br />
+			<input type="text" name="challengePerson" class="formItem" placeholder="挑战对象" /><br />
+	        <textarea name="challengeaContent" class="formItem" placeholder="挑战内容" id="challengeaContent"> </textarea><br />
+			<input id="release" type="submit" value="发布挑战" />
+		</form>
+	</center>
+	</div>
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/initial.js"></script>
+</body>
+</html>
