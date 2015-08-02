@@ -1,0 +1,44 @@
+body, button, input, select, textarea {
+    font:16px "Microsoft YaHei", Verdana, Geneva, sans-serif;
+}
+
+#topPic{
+    width: 100%;
+}
+
+li{
+    width: 48%;
+    float:left;
+    border: 1px solid blue;
+    border-radius:4px;
+    padding-bottom:10%; 
+    margin: 2px;
+}
+
+ul{
+    margin: 20px 10px;
+}
+.good{
+    width:50%;
+    float: left;
+    background-color: white;
+    color:blue;
+    text-align: center;
+}
+.bad{
+    width:50%;
+    float: left;
+     background-color: white;
+    color:blue;
+   text-align: center;
+}
+.clear{
+    clear:both;
+}
+#challengeContent{
+     margin: 10px;
+     padding: 10px;
+     background-color: blue;
+     color: white;
+     font-size: 20px;
+}
