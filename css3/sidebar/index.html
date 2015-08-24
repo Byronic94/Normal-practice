@@ -6,47 +6,92 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<div id="gal">
-		<nav class="galnav">
-			<ul>
-				<li>
-					<input type="radio" name="btn" value="one" checked="checked"/>
-					<label for="btn"></label>
-					<figure>
-						<img src="image.jpg"/>
-						<figcaption>
-							<h4>小标题</h4>
-							<nav role='navigation'>
-								<p>段落</p>
-								<ul>
-									<li>列表文字</li>
-									<li>列表文字</li>
-								</ul>
-							</nav> 
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<input type="radio" name="btn" value="two"/>
-					<label for="btn"></label>
-					<figure class="entypo-forward">
-						<img src="image.jpg"/>
-						<figcaption>
-							<h4>小标题</h4>
-							<nav role='navigation'>
-								<p>段落</p>
-								<ul>
-									<li>列表文字</li>
-									<li>列表文字</li>
-								</ul>
-							</nav> 
-						</figcaption>
-					</figure>
-				</li>
-				。。。
-				。。。
-			</ul>
-		</nav>
-	</div>
+	<div id="container">
+  
+  <div id="header">
+    <h1>A pure css slideshow</h1>
+  </div>
+  
+  <div id="main">
+    <div id="frame">
+	  <input type="radio" checked="checked" name="slideshow" id="slider01" />
+	  <input type="radio" checked="checked" name="slideshow" id="slider02" />
+	  <input type="radio" checked="checked" name="slideshow" id="slider03" />
+	  <input type="radio" checked="checked" name="slideshow" id="slider04" />
+	  <input type="radio" checked="checked" name="slideshow" id="slider05" />
+	  <input type="radio" checked="checked" name="slideshow" id="slider06" />
+	  
+	    <div id="larrow">
+		<label for="slider01" class="l1"><</label>
+		<label for="slider02" class="l2"><</label>
+		<label for="slider03" class="l3"><</label>
+		<label for="slider04" class="l4"><</label>
+		<label for="slider05" class="l5"><</label>
+		</div>
+		<div id="rarrow">
+		<label for="slider01" class="l6">></label>
+		<label for="slider02" class="l7">></label>
+		<label for="slider03" class="l8">></label>
+		<label for="slider04" class="l9">></label>
+		<label for="slider05" class="l10">></label>
+		</div>
+	  <div id="inner">
+	    <ul>
+		
+		  <li class="animation01">
+		    <img src="" />
+			<div class="tooltip">
+			  <h1></h1>
+			</div>
+		  </li>
+		  
+		  <li class="animation02">
+		    <img src="" />
+			<div class="tooltip">
+			  <h1></h1>
+			</div>
+		  </li>
+		  
+		  <li class="animation03">
+		    <img src="" />
+			<div class="tooltip">
+			  <h1></h1>
+			</div>
+		  </li>
+		  
+		  <li class="animation04">
+		    <img src="" />
+			<div class="tooltip">
+			  <h1></h1>
+			</div>
+		  </li>
+		  
+		  <li class="animation05">
+		    <img src="" />
+			<div class="tooltip">
+			  <h1></h1>
+			</div>
+		  </li>
+		  
+		</ul>
+	  </div>    
+	  
+	  <div id="lbutton">
+	  <label for="slider01" class="lb1"></label>
+	  <label for="slider02" class="lb2"></label>
+	  <label for="slider03" class="lb3"></label>
+	  <label for="slider04" class="lb4"></label>
+	  <label for="slider05" class="lb5"></label>
+	  <label for="slider06" class="label6"></label>
+	  </div>
+	  
+    </div>  
+  </div>
+  
+  <div id="footer">
+    <h1><a href="">sidebar</a></h1>
+  </div>
+ 
+</div>
 </body>
 </html>
