@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#drag {border-radius:100px;border:5px solid green;width:100px;height:100px;position:absolute;background:yellow;cursor:pointer;}
+</style>
+</head>
+<body>
+<input id="x"  />
+<input id="y"  />
+<div id="drag"></div>
+
+<script><!--
+var drag = document.getElementById('drag');
+var inputX = document.getElementById('x');
+var inputY = document.getElementById('y');
+if(document.attachEvent){
+drag.attachEvent('onmousedown',dragHandle);
+}else{
+drag.addEventListener('mousedown', dragHandle,false);
+}
+function dragHandle(event){
+	var event = event||window.event;
+	var startX = drag.offsetLeft;
+	var startY = drag.offsetTop;
+	var mouseX = event.clientX;
+	var mouseY = event.clientY;
+	var deltaX = mouseX - startX;
+	var deltaY = mouseY - startY;
+	if(document.attachEvent){
+		drag.attachEvent('onmousemove',moveHandle);
+		drag.attachEvent('onmouseup',upHandle);
+		drag.attachEvent('onlosecapture',upHandle);
+		drag.setCapture();
+	}else{
+		document.addEventListener('mousemove',moveHandle,true);
+		document.addEventListener('mouseup',upHandle,true);
+	}
+	function moveHandle(event){
+		var event = event||window.event;
+		drag.style.left = (event.clientX - deltaX)+"px";
+		drag.style.top = (event.clientY - deltaY)+"px";
+		inputX.value=drag.style.left;
+		inputY.value=drag.style.top;
+	}
+	function upHandle(){
+		if(document.attachEvent){
+			drag.detachEvent('onmousemove',moveHandle);
+			drag.detachEvent('onmouseup',upHandle);
+			drag.detachEvent('onlosecapture',upHandle);
+			drag.releaseCapture();
+		}else{
+			document.removeEventListener('mousemove',moveHandle,true);
+			document.removeEventListener('mouseup',upHandle,true);
+		}
+	}
+
+}
+//--</script>
+</body>
+</html>
